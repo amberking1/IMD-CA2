@@ -1,0 +1,24 @@
+Navigation from : https://startbootstrap.com/template-overviews/scrolling-nav/ 
+I included the folder I downloaded in the zip folder under the name: startbootstrap-scrolling-nav-gh-pages
+Deleted other features eg.Scrollspy
+
+Used W3 schools to help with Bootstrap Features https://www.w3schools.com/bootstrap4/default.asp 
+
+Bootstrap features included in the CA:
+Buttons
+Images
+Progess Bar
+Cards
+Dropdowns
+Collapse
+Forms
+Inputs / Input Groups
+Modal
+Tooltip (on project buttons)
+Tables, Tabs and Pills for exam results
+
+Used icons from Fontasic and Fontawsesome for social media icons and things like Home
+
+
+
+

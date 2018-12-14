@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Amber's CV</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/scrolling-nav.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+
+  </head>
+
+  <body id="page-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" id="home" href="#page-top"><i class="fa fa-fw fa-home"></i> Home </a>
+        <input type="text" name="search"  placeholder="Search..">
+        <button bg-primary type="submit"><i class="fa fa-search"></i></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"  href="#page-top">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger"  href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#workexp">Work Experience</a>
+              </li>
+            <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+          <!-- Header/Hero -->
+
+
+    <header style="background-image: url('background.jpg');">
+
+        <div class="container text-center">
+            
+       <img src="pic.png" class="img-responsive"  alt="student" width=300 height=200> 
+
+            <h1>Amber King</h1> 
+        <p class="lead">Bachelor of Science (Hons) in IT Management  </p>
+          <p class="lead"> Institute of Technology, Tallaght.</p>
+
+        <!-- See Profile Button -->
+        <a href="#about" id="btn" class="btn btn-primary">See Profile</a>
+       
+        
+        <!-- See CV Button  -->
+        <button onclick="window.open('https://1drv.ms/w/s!AsvQCntUUHBegSRFwt_5x-K48_un');" id="btn" class="btn btn-primary">View CV</button>
+       
+       
+
+
+        <!-- Button to Open the Contact Modal -->
+<button type="button" id="btn" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    <i class="fas fa-address-book"></i>  Contact Information
+</button>
+
+<!-- The Contact Infor Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header bg-primary">
+        <h4 class="modal-title"><i class="fas fa-address-book"></i> Contact Information</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <ul>
+       <p>  <i class="fa fa-fw fa-envelope" style="color:#2196F3";></i> amberking.0713@gmail.com </p>
+       <p>  <i class="fas fa-phone" style="color:#2196F3";></i> +353 85 833 9513 </p>
+       <p>  <i class="fas fa-map-marker-alt" style="color:#2196F3";></i> St. Patrick's Park, Stepaside, Dublin 18</p>
+       <em>The best time to contact me is before 6pm on weekdays. Please contact me preferably email.</em>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Button to Open the Email Modal -->
+<button type="button" id="btn" class="btn btn-primary" data-toggle="modal" data-target="#eModal">
+    <i class="fa fa-fw fa-envelope"></i> Email Me
+</button>
+
+<!-- The eModal -->
+<div class="modal" id="eModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- eModal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title"> <i class="fa fa-fw fa-envelope"></i> Email Me </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- eModal body -->
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="comment"><i class="fas fa-pencil-alt" style="color:#2196F3";></i> *Email Content:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div> 
+        <input type="file" class="form-control-file border" style="margin-bottom: 10px";>
+        <label for="email" class="mr-sm-2"><i class="fas fa-pencil-alt" style="color:#2196F3"; required></i> *Email Address:</label>
+        <input type="email" class="form-control mb-2 mr-sm-2" id="email" placeholder="email@address.com">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">*From</span>
+            </div>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal email footer  -->
+      <div class="modal-footer">
+      
+        <button id="btn1" data-toggle="collapse" data-target="#sent" class="btn btn-success">Send</button>
+        
+
+            <div id="sent" class="collapse">
+                   Email Sent!
+                </div>
+    
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close<scripty</button>
+        
+             
+      </div>
+
+     
+
+    </div>
+    </div>
+  </div>
+  
+     <!-- Social Media Icons  -->
+  <div  class="text-right"> 
+      <p class="social">
+         
+          <a href="https://plus.google.com/u/0/101326787240751880222" class="gplus">
+              <i class="socicon-googleplus"></i><span class="sr-only">G+</span>
+          </a>
+          <a href="https://twitter.com/Amberkingxo" class="twitter">
+              <i class="socicon-twitter"></i><span class="sr-only">Twitter</span>
+          </a>
+          <a href="https://linkedin.com/in/amber-king-677a47119" class="linkedin">
+              <i class="socicon-linkedin"></i><span class="sr-only">LinkedIn</span>
+          </a>
+          </p>
+        </div>
+
+</div>
+
+      </div>
+    </header>
+
+                   <!-- About Me  -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2>About Me</h2>
+            
+                  <p class="lead">I am a friendly and extremely hard-working young person with a strong background in a team based, target driven
+                      working environment. My current job has improved many of my traits and values in the working world, such as
+                      providing excellent customer service, solving problems and being able to work as part of a successful team. I am an IT Management student in IT Tallaght in my final year. I am now looking for a graduate position with your company to start my career in IT.
+                      Below are details of relevant skills that I have gained through my course, work placement and part-time work. </p>
+                      <p class="lead">I would be interested in a job in an area of IT Security and/or Cloud Services.     
+                    </div>
+              </div>
+            
+            <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+                <div id="summary">
+
+                <p class="collapse" id="collapseSummary">
+
+                   <!-- Accordian Core Skills  -->
+                   <div id="accordion">
+
+                      <div class="panel">
+                        <div class="panel-header">
+                          <a class="collapsed" data-toggle="collapse" href="#collapseOne">
+                              <h5><i class="far fa-star"></i>  IT Skills</h5>
+                          </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+                             
+                <div class="container">
+          
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped"  style="width:95%">95%</div>
+                    </div>
+                    <p class="text-center">Networking</p>
+                    <br>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary progress-bar-striped" style="width:70%">70%</div>
+                   </div>
+                   <p class="text-center">Web Development</p>
+                    <br>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped" style="width:85%">85%</div>
+                    </div>
+                    <p class="text-center">IT Security</p>
+                    <br>
+                    <div class="progress">
+                      <div class="progress-bar bg-secondary progress-bar-striped" style="width:65%">65%</div>
+                    </div>
+                    <p class="text-center">Database Administration</p>
+                    <br>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped" style="width:81%">81%</div>
+                    </div>
+                    <p class="text-center">Cloud Architecture</p>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+                    
+                  
+
+                   <!-- Accordian Core Skills  -->
+                <div id="accordion">
+
+                    <div class="panel">
+                      <div class="panel-header">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseFour">
+                            <h5><i class="far fa-star"></i> Additional Skills</h5>
+                        </a>
+                      </div>
+                      <div id="collapseFour" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                             <ul class="list-group" style="background-color: #2196F3";><p class="lead"></p>
+                              <li class="list-group-item">Team work and communication skills.</li>
+                              <li class="list-group-item">Working towards goals and reaching them on time</li>
+                              <li class="list-group-item">Time management and ability to work under pressure.</li>
+                              <li class="list-group-item">Problem solving skills.</li>
+                              <li class="list-group-item">Providing quality customer service such as dealing with queries and complaints.</li>
+                              <li class="list-group-item">Experience with many types of technology from work placement in IT sector.</li>
+                              <li class="list-group-item">Ability to work on projects as part of a team and produce results. </li>
+                            </p> </ul>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+              
+    
+          </div>
+        
+      </div>
+      
+      </div>
+    </section>
+
+    <section id="education" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2>Education</h2>
+            <div class="portfolio">
+                <div class="col-lg-8 mx-auto">
+                <div class="row1"  style="background-color: #f8f9fa>
+             
+                      <div class="content1" >
+                          
+                          <img src="itt.jpeg" class="img-responsive" alt="ITT" style="width:100%" width=100 height=150>
+                        <h3>Institute of Technology Tallaght</h3>
+                        <p class="lead">I am currently in my final year of the IT Management Course. The course has provided me with many skills and a lot of experience in all aspects of IT. Please refer to the table below for a breakdown of the modules I studied and the grades I achieved.</p>
+
+                     </div>
+                     </div>  
+                     </div>
+                    
+                     
+
+            <!-- Nav pills -->
+            <h5>Modules & Grades</h5>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#home">4th Year</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu1">3rd Year</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">2nd Year</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu3">1st Year</a>
+    </li>
+  </ul>
+  
+
+  <!-- Tab panes http://www.mkyong.com/jquery/how-to-use-css-and-jquery-to-hide-and-show-tab-content/-->
+  <div class="tab-content">
+
+    <div class="tab-pane container active" id="home">
+      <table class="table"> 
+        <thead> 
+            
+                <td><b>GPA: 2.82</b></td>
+                     
+        <tr>                      
+        <th>Subject</th>         
+        <th>Grade</th>         
+        </tr>        
+        </thead>        
+        <tbody> 
+        <tr>
+        <td>Interactive Media Design</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        <tr> 
+        <td>Social Media Analysis</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        <tr> 
+        <td>Private Cloud Architecture</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        <tr> 
+        <td>Security for Cloud and IOT</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        <tr> 
+        <td>Enterprise Performance Architecture</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        <tr> 
+        <td>Information Management</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        <tr> 
+        <td>4th Year Project</td> 
+        <td>Not Yet Graded</td> 
+        </tr> 
+        </tbody> 
+        </table>  
+      </div>
+
+    <div class="tab-pane container fade" id="menu1">
+        <table class="table"> 
+            <thead> 
+                <td><b>GPA: 2.82</b></td>
+            <tr>            
+            <th>Subject</th>             
+            <th>Grade</th>             
+            </tr>             
+            </thead> 
+            <tbody>           
+            <tr> 
+            <td>Cloud Services</td> 
+            <td>B-</td> 
+            </tr> 
+            <tr> 
+            <td>Innovation and Entepreneurship</td> 
+            <td>B-</td> 
+            </tr> 
+            <tr> 
+            <td>Operating Systems</td> 
+            <td>B-</td> 
+            </tr> 
+            <tr> 
+            <td>Web Application Development</td> 
+            <td>C</td> 
+            </tr> 
+            <tr> 
+            <td>Advanced Databases</td> 
+            <td>C+</td> 
+            </tr> 
+            <tr> 
+            <td>Networking 3</td> 
+            <td>B</td> 
+            </tr>  
+            <tr> 
+            <td>Industry Project</td> 
+            <td>A</td> 
+            </tr> 
+            <tr> 
+            <td>Experiential Learning</td> 
+            <td>Pass</td> 
+            </tr> 
+            </tbody> 
+            </table>  
+    </div>
+
+    <div class="tab-pane container fade" id="menu2">
+        <table class="table"> 
+            <thead> 
+                <td><b>GPA: 2.98</b></td>
+            <tr> 
+            <th>Subject</th> 
+            <th>Grade</th> 
+            </tr> 
+            </thead> 
+            <tbody> 
+            <tr> 
+            <td>Computer Services Management</td> 
+            <td>C+</td> 
+            </tr> 
+            <tr> 
+            <td>Web Design</td> 
+            <td>B-</td> 
+            </tr> 
+            <tr> 
+            <td>Discrete Maths 2</td> 
+            <td>B+</td> 
+            </tr> 
+            <tr> 
+            <td>Networking 1</td> 
+            <td>B</td> 
+            </tr> 
+            <tr> 
+            <td>Software Quality Testing</td> 
+            <td>B+</td> 
+            </tr> 
+            <tr> 
+            <td>IT Scripting</td> 
+            <td>D</td> 
+            </tr> 
+            <tr> 
+            <td>Database Administration</td> 
+            <td>C+</td> 
+            </tr> 
+            <tr>
+            <td>Management Science</td> 
+            <td>C+</td> 
+            </tr> 
+            <tr> 
+            <td>Networking 2</td> 
+            <td>B+</td> 
+            </tr> 
+            <tr> 
+            <td>Financial Management</td> 
+            <td>B+</td> 
+            </tr>  
+            <tr>
+            <td>Information Security</td> 
+            <td>B</td> 
+            </tr> 
+            </tbody>  
+            </table>
+    </div>
+
+    <div class="tab-pane container fade" id="menu3">
+        <table class="table"> 
+            <thead> 
+                <td><b>GPA: 2.29</b></td>
+            <tr> 
+            <th>Subject</th> 
+            <th>Grade</th> 
+            </tr> 
+            </thead> 
+            <tbody> 
+            <tr> 
+            <td>Learning to Learn</td> 
+            <td>B</td> 
+            </tr> 
+            <tr> 
+            <td>Discrete Maths 1</td> 
+            <td>C</td> 
+            </tr> 
+            <tr> 
+            <td>Business Information Systems</td>
+            <td>B</td> 
+            </tr> 
+            <tr> 
+            <td>Web Design Fundamentals</td> 
+            <td>C</td> 
+            </tr> 
+            <tr> 
+            <td>Compuer Architecture</td> 
+            <td>C</td> 
+            </tr> 
+            <tr> 
+            <td>Software Development 1</td> 
+            <td>C</td> 
+            </tr> 
+            <tr> 
+            <td>Operating Systems</td> 
+            <td>D</td> 
+            </tr> 
+            <tr> 
+            <td>Database</td> 
+            <td>D</td> 
+            </tr> 
+            <tr> 
+            <td>Software Development 2</td> 
+            <td>C</td> 
+            </tr> 
+            <tr>
+            <td>Object Oriented Systems Analysis</td>
+            <td>B-</td> 
+            </tr>  
+            <tr> 
+            <td>Social Media</td> 
+            <td>B-</td> 
+            </tr> 
+            </tbody> 
+            </table>
+    </div>
+  </div>
+
+  <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+  <div id="summary"> 
+      <p class="collapse" id="collapseSummary">
+
+  <div class="portfolio" >
+      <div class="row1" >
+   
+
+          <div class="panel" style="background-color: #f8f9fa >
+              <div class="panel-header">
+                <a class="collapsed" data-toggle="collapse" href="#collapseSix">
+                         <h5>  Secondary School</h5>
+                       
+                </a>
+              </div>
+              <div id="collapseSix" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+
+            <div class="content1">
+                <img src="raphs.jpg" class="img-responsive" alt="Raphaela's" style="width:100%" width=100 height=150>
+              <p class="lead">I completed the Leaving Certificate in 2014 and achieved 355 points.</p>
+           </div>
+           </div>  
+                </div>
+          </div>
+  
+        </div>
+         </div>                      
+        </div>
+      </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2>Projects</h2>
+    
+       
+       
+          </div>
+        </div>
+        <!-- Portfolio Gallery Grid -->
+        <div class="portfolio">
+
+            
+  <div class="content1">
+      <div class="col-lg-8 mx-auto">
+      <img src="industryproj.jpg" alt="Mountains" style="width:100%">
+      <h2>Third Year Research Project</h2>
+      <p class="lead">This project involved researching the ways in which data can be protected in a healthcare environment. It focuses heavily on Tallaght University Hospital, as this is where I carried out my work placement. </p>
+      <button onclick="window.open('https://1drv.ms/w/s!AsvQCntUUHBegW6Zcy1spwhv6INZ');" id="btn" class="btn btn-primary"> <a href="#" data-toggle="tooltip" data-placement="right" title="See full project on OneDrive" style="color: white"; >View Project</button></a>
+    </div>
+    </div>
+
+<div class="row1">
+    <div class="column1">
+      <div class="content1">
+          <img src="security.jpg" alt="Security" style="width:100%" width=100 height=150>
+        <h3>Cloud Security Report</h3>
+        <p>This report involved researching the ways in which a small business can secure their network in the cloud, by using cloud provider's services. It also determines the best way to secure a connection to cloud services. </p>
+        <button onclick="window.open('https://1drv.ms/w/s!AsvQCntUUHBeggl8tz7F3BSlr_j6');" id="btn" class="btn btn-primary"> <a href="#" data-toggle="tooltip" data-placement="right" title="See full project on OneDrive" style="color: white"; >View Project</button></a>
+       <!-- Tooltip -->
+       
+     <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip(); 
+            });
+            </script>
+      </div>
+    </div>
+    <div class="column1">
+      <div class="content1">
+        <img src="4proj.jpg" alt="Cloud" style="width:100%" width=150 height=150>
+        <h3>Fourth Year Research Report</h3>
+        <p>This project involved researching the ways in web applications can be hosted and secured using cloud services. It focuses on the best solutions available for small businesses using parameters such as cost and security. </p>
+        <button onclick="window.open('https://1drv.ms/w/s!AsvQCntUUHBegi2V5H0rXyWXu5JKZ');" id="btn" class="btn btn-primary"> <a href="#" data-toggle="tooltip" data-placement="right" title="See full project on OneDrive" style="color: white"; >View Project</button></a>
+       
+        
+      </div>
+    </div>
+    <div class="column1">
+      <div class="content1">
+        <img src="data.jpg" alt="Datacentre" style="width:100%" width=100 height=150>
+        <h3>Private Cloud Assessment</h3>
+        <p>This report details the different options available to a large company regarding their datacentre. The report decides whether outsourcing datacentres or keeping them in-house are more beneficial for a company.</p>
+        <button onclick="window.open('https://1drv.ms/w/s!AsvQCntUUHBegiNmB_E5UAqzyeRo');" id="btn" class="btn btn-primary"> <a href="#" data-toggle="tooltip" data-placement="right" title="See full project on OneDrive" style="color: white"; >View Project</button></a>
+       
+      </div>
+    </div>
+    <div class="column1">
+      <div class="content1">
+        <img src="visual.jpg" alt="Visualisation" style="width:100%" width=100 height=150>
+        <h3>Interactive Media Design Assessment</h3>
+        <p>This report shows the process of using large datasets and turning them into visualisations to make sense of them. The report uses two Airbnb listing datasets from Bristol and Manchester and compares the two.</p>
+        <button onclick="window.open('https://1drv.ms/w/s!AsvQCntUUHBeghz2BYe2Pc5D_g3G');" id="btn" class="btn btn-primary"> <a href="#" data-toggle="tooltip" data-placement="right" title="See full project on OneDrive" style="color: white"; >View Project</button></a>
+      </div>
+    </div>
+  </div>
+
+</div>
+        </div>
+    </section>
+
+     <!-- Work Exoerience -->
+
+    <section id="workexp" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h2>Work Experience</h2>
+
+              <div class="portfolio">
+                  <div class="row1">
+                      <div class="col-lg-8 mx-auto">
+               
+                        <div class="content1" style="background-color: #f8f9fa"; >
+                            <img src="tuh.png" class="img-responsive" alt="TUH" style="width:100%" width=100 height=150>
+                          <h3>Tallaght University Hospital</h3>
+                          <p class="lead">I completed a 6 month work placement programme in 2018. I worked in Tallaght University Hospital as a Digital Support Officer. I worked on a project with the Project Delivery Team which involved creating a new intranet system for the 3000+ staff in the hospital to use. This was achieved using an on-premises version of SharePoint.
+                        
+                              <h5>Roles and Responsibilites</h5> 
+                                <div>
+                                <br>
+                               <span id="text">
+                                  <ul class="list-group" style="background-color: #2196F3";><p></p>
+                                    <li class="list-group-item">Creating department websites using SharePoint for the organization’s new intranet.</li>
+                                    <li class="list-group-item">Communicating with department heads, regarding the content they wish to include on their website.</li>
+                                    <li class="list-group-item">Advising the head of each department throughout the process of adding content to their site.
+                                        <li class="list-group-item">Creating training manuals and documents for the staff of departments throughout the hospital.</li>
+                                        <li class="list-group-item">Providing training sessions for elected superusers of each department</li>
+                                        <li class="list-group-item"> Assisting the superusers with the completion of their site.</li>
+                                        <li class="list-group-item">Ensuring that each department had their site completed on time </li>
+                                        <li class="list-group-item">Ensuring the project was going according to schedule </li>
+                                        <li class="list-group-item">Updating my team leader and the Project Department manager on the progress of the project. </li>
+                                        <li class="list-group-item">Updating spreadsheets and other relevant documents as the project went on. </li>
+                              </li></ul>
+                                </span>
+                              </div>
+                              <div class="btn-container">
+                              <button id="toggle">Read More</button>
+                              </div>
+                                        
+                              
+                                    </div>
+                                     </div>                      
+                                    </div>
+                       </div>
+                       </div>  
+                       </div>
+               
+
+                      
+            
+              <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+                       <div id="summary"> 
+                           <p class="collapse" id="collapseSummary">
+                     
+                       <div class="portfolio" >
+                           <div class="row1">
+                        
+                     
+                               <div class="panel">
+                                   <div class="panel-header">
+                                     <a class="collapsed" data-toggle="collapse" href="#collapseFive">
+                                        <h5>Work Placement Presentation</h5>
+                                      </a>
+                                        <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                            <div class="card-body1">
+                                                <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="https://onedrive.live.com/embed?resid=5E7050547B0AD0CB%21251&amp;authkey=%21ABsgF7WczYPT-Mo&amp;em=2&amp;wdAr=1.7777777777777777" frameborder="0"> <a target="_blank" href="https://office.com"></a> <a target="_blank" href="https://office.com/webapps"></a>.</iframe>
+                                            </div>
+                                          </div>
+                                        </div>
+                                               
+                                     
+                                   </div>
+                              
+            
+            <div class="panel">
+                <div class="panel-header default">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseSeven">
+                      <h5>Other Work Experience</h5>
+                  </a>
+                </div>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p class="lead">Retail Assistant, Dunnes Stores</p>
+        
+                        <ul class="list-group" style="background-color: #2196F3";><p></p>
+                          <li class="list-group-item">Providing quality customer service such as dealing with queries and complaints.</li> 
+                          <li class="list-group-item">Paying attention to detail in regards to goods and customers.</li>
+                          <li class="list-group-item">Keeping the shop floor organised and tidy.</li>
+                          <li class="list-group-item">Dealing with high quality, branded goods.</li>
+                          <li class="list-group-item">Handling money.</li>
+                          <li class="list-group-item">Working as part of a successful team.</li>
+                          <li class="list-group-item">Dealing with high quality, branded goods.</li>
+                        </p> </ul>
+                    </div>
+                  </div>
+                </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Interests -->
+
+      <section id="interests" >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <h2>Interests</h2>
+
+                <div class="media">
+                    <span class="media-left">
+                        <img src="hockey.jpg" class="rounded" alt="Me" width=150 height=100>
+                    </span>
+                    <div class="media-body">
+                      <h5>Hockey</h5>
+                      <p class="lead">I enjoy playing hockey as it keeps me fit and healthy. I like playing team sports and interacting with others.</p>
+                    
+                        </div>
+                  </div>
+                  <div class="media">
+                      <span class="media-left">
+                          <img src="reading.jpg" class="rounded" alt="Me" width=150 height=100>
+                      </span>
+                      <div class="media-body">
+                        <h5>Reading</h5>
+                        <p class="lead">I like to read Crime and Thriller books in my spare time.</p>
+                      
+                          </div>
+                    </div>
+                
+
+
+     
+      </div>
+            
+    </div>
+  
+
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Amber King 2018</p>
+      </div>
+     
+    </footer>
+   
+
+  </body>
+
+</html>

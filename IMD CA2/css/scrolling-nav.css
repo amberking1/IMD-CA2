@@ -1,0 +1,224 @@
+
+
+header {
+  padding: 154px 0 100px;
+  color: white;
+
+}
+
+
+.navbar-brand  {
+ 
+  color: white !important;
+}
+
+h2{
+  padding-bottom: 10px;
+}
+
+h5{
+  padding-bottom: 10px;
+}
+
+
+
+/* Change the color of links on hover */
+.nav-item a:hover {
+  background: #2196F3;
+  color: white;
+}
+
+.nav-link js-scroll-trigger {
+  background: #2196F3;
+  color: white;
+}
+
+/*Search bar */
+
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 40%;
+}
+
+
+/* monochromatic share icons */
+p.social a {display: inline-block; margin: 5px 5px 5px 0; color: #fff;  width: 2em; height: 2em; border-radius: 1em; line-height: 2em; font-size: 1em; vertical-align: bottom; text-align: center; border: solid 0.5px #ccc; color: #ccc; transition: all 0.2s ease-out;}
+p.social a:hover, p.social a:focus  {color: darkblue; border-color: darkblue; text-decoration: none;}
+p.social a i {vertical-align: middle;}
+p.social a i:before {line-height: 2em;}
+
+
+
+.btn {
+  border-color: #2196F3;
+  color: white;
+  
+}
+
+.btn:hover {
+  background: #2196F3;
+  color: white;
+}
+
+.modal-header {
+  color:  white;
+  background-color: #2196F3;
+ 
+}
+
+
+.modal-body {
+  color: black;
+  background-color: white;
+  text-align: left
+}
+
+#modal-body p{
+  float: left;
+}
+.modal-footer {
+  color: green;
+  background-color: white;
+}
+
+.navbar-nav a{
+  color: white !important;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 100px 0 100px;
+  }
+  
+}
+
+
+
+section {
+  padding: 90px 0;
+}
+
+#summary {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#summary p.collapse:not(.show) {
+    height: 42px !important;
+    overflow: hidden;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+
+#summary p.collapsing {
+    min-height: 42px !important;
+}
+
+#summary a.collapsed:after  {
+    content: '+ Read More';
+    position: relative !important;
+    left: 15% !important;
+}
+
+#summary a:not(.collapsed):after {
+    content: '- Read Less';
+}
+
+
+
+
+/*Education */
+
+.media-left {
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+/* Project boxes */
+* {
+  box-sizing: border-box;
+}
+
+.row1 {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row1,
+.row1 > .column1 {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content1 {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column1 {
+      width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+      width: 100%;
+  }
+}
+
+
+#text{
+display:none;
+}
+.btn-container{
+  height:20px;
+  
+}
+a:active{
+  color:#ffd323;
+}
+
+button{
+  background-color:#f8f9fa;
+  color: #007bff;
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:2px;
+ 
+  box-sizing:border-box;
+}
+
+
+
+footer {
+  background-color: #007bff;
+  color: white;
+}
